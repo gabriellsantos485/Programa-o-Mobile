@@ -19,18 +19,14 @@ Android Studio versão Ladybug Feature Drop 2024.2.2
 
 <img src="img/telaIMC01.jpg" alt="Texto Alternativo" height="600" width="300">
 
-<br>
 
 ### Tela com saída positiva:
 
 <img src="img/telaIMC02.jpg" alt="Texto Alternativo" height="600" width="300">
 
-<br>
 ### Tela com saída de peso abaixo do ideal:
 
 <img src="img/telaIMC03.jpg" alt="Texto Alternativo" height="600" width="300">
-
-<br>
 
 ### Tela com saída de peso acima do ideal:
 
