@@ -15,4 +15,4 @@ Linguagem de Programação Java
 Android Studio versão Ladybug Feature Drop 2024.2.2
 
 ## 📷 Imagens
-![Tela 01](Imc/img/telaIMC01.jpg)
+<img src="Imc/img/telaIMC01.jpg" alt="Texto Alternativo">
