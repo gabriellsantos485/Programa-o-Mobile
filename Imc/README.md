@@ -14,28 +14,35 @@ Linguagem de Programação Java
 
 Android Studio versão Ladybug Feature Drop 2024.2.2
 
-## 📷 Imagens
+## 📷 Imagens  
 
-### Tela de entrada de dados:
+### 📝 Tela de entrada de dados  
 
-<p align="center">
-  <img src="img/telaIMC01.jpg" alt="Texto Alternativo" height="600" width="300">
-</p>
+<div align="center">  
+  <img src="img/telaIMC01.jpg" alt="Tela de entrada de dados" height="600" width="300">  
+</div>  
 
-### Tela com saída positiva:
+---
 
-<p align="center">
-  <img src="img/telaIMC02.jpg" alt="Texto Alternativo" height="600" width="300">
-</p>
+### ✅ Tela com saída positiva  
 
-### Tela com saída de peso abaixo do ideal:
+<div align="center">  
+  <img src="img/telaIMC02.jpg" alt="Tela com saída positiva" height="600" width="300">  
+</div>  
 
-<p align="center">
-  <img src="img/telaIMC03.jpg" alt="Texto Alternativo" height="600" width="300">
-</p>
+---
 
-### Tela com saída de peso acima do ideal:
+### ⚠️ Tela com saída de peso abaixo do ideal  
 
-<p align="center">
-  <img src="img/telaIMC04.jpg" alt="Texto Alternativo" height="600" width="300">
-</p>
+<div align="center">  
+  <img src="img/telaIMC03.jpg" alt="Tela com saída de peso abaixo do ideal" height="600" width="300">  
+</div>  
+
+---
+
+### ⚠️ Tela com saída de peso acima do ideal  
+
+<div align="center">  
+  <img src="img/telaIMC04.jpg" alt="Tela com saída de peso acima do ideal" height="600" width="300">  
+</div>  
+
