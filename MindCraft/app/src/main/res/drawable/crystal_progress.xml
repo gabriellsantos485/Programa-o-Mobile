@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Fundo do Cristal -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#f5f5f5"/> <!-- Cor azul claro -->
+            <stroke android:width="12dp" android:color="#f5f5"/> <!-- Borda azul mais escura -->
+            <corners android:radius="16dp"/> <!-- Bordas arredondadas -->
+        </shape>
+    </item>
+
+    <!-- Efeito de Brilho Interno -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:centerX="50%"
+                android:centerY="50%"
+                android:gradientRadius="40dp"
+                android:startColor="#EBF743"
+            android:endColor="#00000000"/>
+        </shape>
+    </item>
+
+</layer-list>
