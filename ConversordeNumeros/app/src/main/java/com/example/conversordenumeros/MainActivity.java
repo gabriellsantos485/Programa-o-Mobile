@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         TextView numeroDigitado = findViewById(R.id.numero);
         Conversor conversor = new Conversor(2);
         String valorNumeroEmInteiro = (numeroDigitado.getText().toString());
-        campoParaImpressao.setText(conversor.getCalcularBiParaDecimal("1010101010", 0));
+        campoParaImpressao.setText(String.valueOf(conversor.getCalcularBiParaDecimal(valorNumeroEmInteiro, 0)));
     }
 
 

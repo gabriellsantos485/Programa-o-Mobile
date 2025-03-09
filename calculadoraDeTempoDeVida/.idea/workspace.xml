@@ -17,21 +17,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b635c55-7f8b-49c1-a0a6-5512a1cd3bc9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ConversordeNumeros/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversordeNumeros/app/src/main/java/com/calculadora/Conversor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversordeNumeros/app/src/main/java/com/example/conversordenumeros/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversordeNumeros/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConversordeNumeros/app/src/test/java/com/calculadora/ConversorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MindCraft/app/src/main/java/com/app/arvore/InfiniteTreeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MindCraft/app/src/main/java/com/example/mindcraft/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MindCraft/app/src/main/res/drawable/baseline_home_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MindCraft/app/src/main/res/drawable/baseline_person_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MindCraft/app/src/main/res/drawable/baseline_settings_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MindCraft/app/src/main/res/drawable/crystal_progress.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MindCraft/app/src/main/res/layout/activity_home.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MindCraft/app/src/main/res/menu/botton_navimenu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConversordeIdade/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConversordeIdade/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConversordeIdade/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConversordeIdade/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/androidTest/java/com/example/teladelogin/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/java/com/example/teladelogin/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/app/src/test/java/com/example/teladelogin/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TelaDeLogin/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CalculadoraDeNotas/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculadoraDeNotas/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,42 +102,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.MainActivity.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AnoTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AnoTest.testCalcularDiferencaDeDiaDoMes.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AnoTest.testQtdeDeDiaNoAno.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AnoTest.testQtdeDias.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculadoraTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculadoraTest.testCalcularAnosBissestos.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculadoraTest.testCalcularEmMes.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculadoraTest.testCalcularIdadeEmAno.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculadoraTest.testGetDiaNascimento.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculadoraTest.testSepararElemento.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculadoraTest.testSepararElementos.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculadoraTest.testcalcularIdadeEmAno.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculadoraTest.testcalcularIdadeEmDia.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Gabriel/Documents/CodigosAndroidStudio/Programa-o-Mobile/calculadoraDeTempoDeVida/app/src/test/java/com/programacaomobile/calculadoradeidade&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gabriel/Documents/CodigosAndroidStudio/Programa-o-Mobile/calculadoraDeTempoDeVida&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.MainActivity.executor": "Run",
+    "Android App.app.executor": "Run",
+    "Gradle.AnoTest.executor": "Run",
+    "Gradle.AnoTest.testCalcularDiferencaDeDiaDoMes.executor": "Run",
+    "Gradle.AnoTest.testQtdeDeDiaNoAno.executor": "Run",
+    "Gradle.AnoTest.testQtdeDias.executor": "Run",
+    "Gradle.CalculadoraTest.executor": "Run",
+    "Gradle.CalculadoraTest.testCalcularAnosBissestos.executor": "Run",
+    "Gradle.CalculadoraTest.testCalcularEmMes.executor": "Run",
+    "Gradle.CalculadoraTest.testCalcularIdadeEmAno.executor": "Run",
+    "Gradle.CalculadoraTest.testGetDiaNascimento.executor": "Run",
+    "Gradle.CalculadoraTest.testSepararElemento.executor": "Run",
+    "Gradle.CalculadoraTest.testSepararElementos.executor": "Run",
+    "Gradle.CalculadoraTest.testcalcularIdadeEmAno.executor": "Run",
+    "Gradle.CalculadoraTest.testcalcularIdadeEmDia.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Gabriel/Documents/CodigosAndroidStudio/Programa-o-Mobile/calculadoraDeTempoDeVida/app/src/test/java/com/programacaomobile/calculadoradeidade",
+    "last_opened_file_path": "C:/Users/Gabriel/Documents/CodigosAndroidStudio/Programa-o-Mobile/ConversordeIdade",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />

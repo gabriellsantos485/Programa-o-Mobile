@@ -11,8 +11,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
-
 public class MainActivity extends AppCompatActivity {
 
     private EditText notaP1, notaP2, notaP3, faltas;
@@ -46,12 +44,10 @@ public class MainActivity extends AppCompatActivity {
         double p2 = Double.parseDouble(notaP2.getText().toString());
         double p3 = Double.parseDouble(notaP3.getText().toString());
         int numeroFaltas = Integer.parseInt(faltas.getText().toString());
-
         if (p1 < 0 || p2 < 0 || p3 < 0 || p1 > 10 || p2 > 10 || p3 > 10) {
             textResultado.setText("Notas devem ser entre 0 e 10.");
             return;
         }
-
         // Calcular a média final (duas maiores notas)
         double[] notas = {p1, p2, p3};
         java.util.Arrays.sort(notas); //ordenação das notas
@@ -69,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             situacao = "Reprovado por nota e faltas";
         }
-
         String resultado = "Média final: " + mediaFinal + "\nSituação: " + situacao;
         textResultado.setText(resultado);
     }

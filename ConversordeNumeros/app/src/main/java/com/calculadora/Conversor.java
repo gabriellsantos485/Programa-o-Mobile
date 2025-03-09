@@ -42,6 +42,7 @@ public class Conversor {
         }
 
         int bit = num.charAt(index) - '0'; // Converte o caractere para inteiro (0 ou 1)
+
         return (bit << (num.length() - 1 - index)) + binarioParaDecimal(num, index + 1);
     }
 
@@ -58,11 +59,8 @@ public class Conversor {
         else if (num == 14) return "E";
         else if (num == 15) return "F";
         else return Integer.toString(num);
-
     }
-
     public String getHexa(int num){ return calcularEmHexa(num);}
-
     public String getCalcularDecimal(int num){return calcular(num);}
 
     public int getCalcularBiParaDecimal(String num, int index){return binarioParaDecimal(num, index);}

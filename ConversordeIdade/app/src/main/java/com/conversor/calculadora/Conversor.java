@@ -41,19 +41,13 @@ public class Conversor {
         else if (mesAtual == mesNascimento)
         {
             int diaAtual, diaNas;
-
             diaAtual = separarElementos(dataDeHoje)[0];
             diaNas = separarElementos(dataNascimento)[0];
-
             if (diaNas <= diaAtual)
                 resultado = (anoAtual - anoNascimento) ;
-
             else
                 resultado = (anoAtual - anoNascimento) - 1;
-
-
         }
-
         else
             resultado = anoAtual - anoNascimento;
 
@@ -63,41 +57,51 @@ public class Conversor {
 
     public int calcularIdadeEmMeses()
     {
-        int resultado=0, mesAtual, mesNasc, cond;
+        int resultado=0, mesAtual, mesNasc, anoAtual, anoNas;
         mesNasc = separarElementos(dataNascimento)[1];
         mesAtual = separarElementos(dataDeHoje)[1]; //2
-        if (mesAtual >= mesNasc)
+        anoAtual =separarElementos(dataDeHoje)[2];
+        anoNas = separarElementos(dataNascimento)[2];
+        if (mesAtual > mesNasc)
             resultado = (calcularIdadeEmAno() * 12) + (12 - (mesAtual - mesNasc)) ;
+        else if (mesAtual == mesNasc &&  anoNas != anoAtual){return 12;}
+        else if (mesAtual == mesNasc && anoNas == anoAtual){return 0;}
         else
             resultado = (calcularIdadeEmAno() * 12) + (12 - (mesNasc - mesAtual)) ;
 
         return resultado;
     }
 
-    public int calcularIdadeEmDia()
-    {
-
+    public int calcularIdadeEmDia() {
         int mesAtual = separarElementos(dataDeHoje)[1], diaAtual = separarElementos(dataDeHoje)[0];
         int mesNas = separarElementos(dataNascimento)[1], diaNiver = separarElementos(dataNascimento)[0];
-
         int mesesVividosAnos, diasCertos, mesNiverDiaAtualSomadosDias, totalMeses, resultadoFinal;
-
+        int anoNas = separarElementos(dataNascimento)[2];
+        int anoAtual = separarElementos(dataDeHoje)[2];
 
         diasCertos = calcularIdadeEmAno() * 365;
-        if (mesNasMaior() == true)
+        if (mesNasMaior() == 2)
         {
             mesesVividosAnos = 12 - (mesNas - mesAtual); // 12 - Mes do nascimento - mes atual -> meses vividos até o momento
             mesNiverDiaAtualSomadosDias = ano.calcularDiferencaDeDiaDoMes(diaNiver, mesNas) + diaAtual; // calcula os dias dos meses do aniversario e do dia atual vividos ate o momento e soma os dois
             totalMeses = ano.somarDiasDosMeses(mesNas, mesesVividosAnos - 1);
             resultadoFinal = totalMeses + diasCertos + mesNiverDiaAtualSomadosDias + calcularAnosBissestos(2024);
             return resultadoFinal;
-
+        }
+        else if (mesNasMaior() == 1 && diaAtual == diaNiver && anoAtual == anoNas){
+            return 0;
+        }
+        else if (mesNasMaior() == 1 && diaAtual == diaNiver && anoNas == (anoAtual - 1)){
+            return 365;
+        }
+        else if (mesNasMaior() ==1 && diaAtual == diaNiver && anoNas != (anoAtual -1)){
+            int resultado = ((anoAtual - anoNas) * 365) + calcularAnosBissestos(2024);
+            return resultado;
         }
         else {
             mesesVividosAnos = (mesAtual - mesNas); // mes vivido apos o aniversario
             mesNiverDiaAtualSomadosDias = ano.calcularDiferencaDeDiaDoMes(diaNiver, mesNas) + diaAtual; // calcula os dias dos meses do aniversario e do dia atual vividos ate o momento e soma os dois
             totalMeses = ano.somarDiasDosMeses(mesNas, mesesVividosAnos - 1);
-
             resultadoFinal = totalMeses + diasCertos + mesNiverDiaAtualSomadosDias + calcularAnosBissestos(2024);
             return resultadoFinal;
         }
@@ -135,10 +139,14 @@ public class Conversor {
         return resultado;
     }
 
-    private boolean mesNasMaior()
+    private int mesNasMaior()
     {
-        boolean res = separarElementos(dataDeHoje)[1] < separarElementos(dataNascimento)[1] ? true : false;
-        return res;
+        int mesAtual = separarElementos(dataDeHoje)[1];
+        int mesNas = separarElementos(dataNascimento)[1];
+
+        if (mesNas > mesAtual) return 2;
+        else if (mesAtual == mesNas) return 1;
+        else return 0;
     }
 
 
