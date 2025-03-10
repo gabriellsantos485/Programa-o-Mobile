@@ -1,6 +1,7 @@
 package com.example.mindcraft;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -22,10 +23,44 @@ public class Licao extends AppCompatActivity {
      */
     private TextView campoDePergunta;
     private RadioButton opcaoNumero1, opcaoNumero2, opcaoNumero3, opcaoNumero4; // instanciação dos botoes de opçoes
-    private Button responder;
-    private Questao pergunta1= new Questao("O que é SQL ?", new String[]{"Sequencia Quadricular Lateral", "Doença", "Linguagem de Banco de dados", "Nenhuma das anteriores"}, 2);
-    String[] perguntas = {"Pergunta1", "Pergunta2", "Pergunta3", "Pergunta4", "Pergunta5", "Pergunta6", "Pergunta7", "Pergunta8", "Pergunta9", "Pergunta10" };
+    private Button responder, btnProximo;
 
+    private String[][] perguntas = {
+            {"Qual comando é usado para recuperar dados de uma tabela no SQL?",
+                    "SELECT", "INSERT", "DELETE", "UPDATE", "1"},
+
+            {"Qual comando adiciona uma nova linha em uma tabela?",
+                    "ADD", "INSERT", "MODIFY", "UPDATE", "2"},
+
+            {"Qual cláusula é usada para filtrar resultados em uma consulta SQL?",
+                    "WHERE", "ORDER BY", "GROUP BY", "HAVING", "1"},
+
+            {"Qual palavra-chave SQL é usada para ordenar os resultados de uma consulta?",
+                    "GROUP BY", "ORDER BY", "SORT", "ARRANGE", "2"},
+
+            {"Qual comando é usado para remover todas as linhas de uma tabela sem apagar sua estrutura?",
+                    "DELETE", "DROP", "TRUNCATE", "CLEAR", "3"},
+
+            {"Qual operador SQL é usado para buscar um padrão em uma coluna de texto?",
+                    "LIKE", "MATCH", "FIND", "SEARCH", "1"},
+
+            {"Qual comando SQL é usado para modificar dados existentes em uma tabela?",
+                    "CHANGE", "MODIFY", "UPDATE", "ALTER", "3"},
+
+            {"O que a cláusula GROUP BY faz?",
+                    "Agrupa registros com valores iguais em colunas específicas",
+                    "Ordena os registros da tabela",
+                    "Exclui valores duplicados",
+                    "Seleciona os primeiros registros", "1"},
+
+            {"Qual comando é usado para remover uma tabela do banco de dados?",
+                    "REMOVE", "DELETE", "DROP", "CLEAR", "3"},
+
+            {"Qual dos seguintes comandos cria uma nova tabela?",
+                    "CREATE TABLE", "NEW TABLE", "MAKE TABLE", "ADD TABLE", "1"}
+    };
+
+    private int indiceAtual = 0;
 
 
     @Override
@@ -41,25 +76,36 @@ public class Licao extends AppCompatActivity {
         opcaoNumero3 =findViewById(R.id.opc3);
         opcaoNumero4 =findViewById(R.id.opc4);
 
+        btnProximo = findViewById(R.id.proxima);
+
         responder = findViewById(R.id.responder);
 
+        btnProximo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (indiceAtual < perguntas.length -1){
+                    indiceAtual++;
+                    carregarPergunta();
+                }else{
+                    campoDePergunta.setText("Fim do quiz");
+                }
+            }
+        });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        }
-    private void carregarQuestao(String pergunta, String opcao1, String opcao2, String opcao3, String opcao4){ // methodo que tem que ser atualizado constantemente
-        campoDePergunta.setText(pergunta);
-        opcaoNumero1.setText(opcao1);
-        opcaoNumero2.setText(opcao2);
-        opcaoNumero3.setText(opcao3);
-        opcaoNumero4.setText(opcao4);
     }
 
-    private void irParaProxima(){
-
+    private void carregarPergunta(){
+        campoDePergunta.setText(perguntas[indiceAtual][0]);
+        opcaoNumero1.setText(perguntas[indiceAtual][1]);
+        opcaoNumero2.setText(perguntas[indiceAtual][2]);
+        opcaoNumero3.setText(perguntas[indiceAtual][3]);
+        opcaoNumero4.setText(perguntas[indiceAtual][4]);
     }
+
 
 
 

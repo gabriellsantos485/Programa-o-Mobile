@@ -27,7 +27,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/kulim_park_bold"
                 android:text=""
-                android:textSize="48sp"></TextView>
+                android:textSize="24sp"></TextView>
 
 
         </RelativeLayout>
