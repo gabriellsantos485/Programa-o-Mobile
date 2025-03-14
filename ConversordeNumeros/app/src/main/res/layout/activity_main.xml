@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8DC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="55dp"
+        android:background="#55BDA1"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Conversor de Numeros"
+        android:textAlignment="center"
+        android:textColor="#E1E7DD"
+        android:textColorLink="#3C1B1B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="231dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="120dp"
+        android:background="#F0ECEC"
+        android:ems="10"
+        android:hint="Numero"
+        android:inputType="numberSigned"
+        android:shadowColor="#0B0A0A"
+        android:textAlignment="center"
+        android:textColor="#090707"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/decParaBi"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="84dp"
+        android:text="Decimal para binário"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/impressao" />
+
+    <Button
+        android:id="@+id/decParaOctal"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="116dp"
+        android:text="Decimal para Octal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/decParaBi" />
+
+    <Button
+        android:id="@+id/decParaHex"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="112dp"
+        android:text="Decimal para Hexadecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/decParaOctal" />
+
+    <Button
+        android:id="@+id/hexParaBi"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="20dp"
+        android:text="Hexadecimal para binário"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ocParaDec" />
+
+    <Button
+        android:id="@+id/biParaHex"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="116dp"
+        android:text="Binário para Hexadecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/decParaHex" />
+
+    <Button
+        android:id="@+id/ocParaDec"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="116dp"
+        android:text="Octal para decimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/biParaDec" />
+
+    <Button
+        android:id="@+id/biParaDec"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="88dp"
+        android:text="Binário para decimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/impressao" />
+
+    <TextView
+        android:id="@+id/impressao"
+        android:layout_width="228dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="88dp"
+        android:background="#2C3A9E"
+        android:textAlignment="center"
+        android:textColor="#DCCDCD"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/numero" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
